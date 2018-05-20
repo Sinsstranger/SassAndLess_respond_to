@@ -1,0 +1,16 @@
+=respond-to($media)
+	@if $media == phones
+		@media all and (max-width: 479px)
+			@content
+	@if $media == wide-phones
+		@media all and (min-width: 480px) and (max-width: 767px)
+			@content
+	@if $media == tablets
+		@media all and (min-width: 768px) and (max-width: 991px)
+			@content
+	@if $media == small-desktops
+		@media all and (min-width: 992px) and (max-width: 1199px)
+			@content
+	@if $media == lg-desktops
+		@media all and (min-width: 1200px) and (max-width: 1440px)
+			@content
